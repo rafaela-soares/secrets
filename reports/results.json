@@ -18,8 +18,8 @@
 	},
 	"total_counter": 73,
 	"total_bom_resources": 9,
-	"start": "2022-06-14T15:22:59.521042391Z",
-	"end": "2022-06-14T15:23:38.219156006Z",
+	"start": "2022-06-14T15:26:25.991610847Z",
+	"end": "2022-06-14T15:27:04.812539673Z",
 	"paths": [
 		"./kics/assets/queries/terraform/aws/s3_bucket_without_enabled_mfa_delete"
 	],
@@ -36,34 +36,21 @@
 			"description_id": "a8924b3b",
 			"files": [
 				{
-					"file_name": "kics/assets/queries/terraform/aws/s3_bucket_without_enabled_mfa_delete/test/negative3.tf",
-					"similarity_id": "ef314b6546e2787f4acc1f777a7f0f8cbc571a6e5916e17e9db67c245600efbf",
-					"line": 1,
-					"resource_type": "n/a",
-					"resource_name": "n/a",
-					"issue_type": "MissingAttribute",
-					"search_key": "module[s3_bucket]",
-					"search_line": 0,
-					"search_value": "",
-					"expected_value": "'block_public_policy' is equal 'true'",
-					"actual_value": "'block_public_policy' is missing"
-				},
-				{
-					"file_name": "kics/assets/queries/terraform/aws/s3_bucket_without_enabled_mfa_delete/test/positive6.tf",
-					"similarity_id": "d7ef65b7ba55c8578f533c4a7994713be590ffe9aa018a9aef8d04c4e6776489",
-					"line": 1,
-					"resource_type": "n/a",
-					"resource_name": "n/a",
-					"issue_type": "MissingAttribute",
-					"search_key": "module[s3_bucket]",
-					"search_line": 0,
-					"search_value": "",
-					"expected_value": "'block_public_policy' is equal 'true'",
-					"actual_value": "'block_public_policy' is missing"
-				},
-				{
 					"file_name": "kics/assets/queries/terraform/aws/s3_bucket_without_enabled_mfa_delete/test/negative2.tf",
 					"similarity_id": "b7068a6187ee12c23c4bce3882bd205b8152f1f6c7072aff21667726361d33ff",
+					"line": 1,
+					"resource_type": "n/a",
+					"resource_name": "n/a",
+					"issue_type": "MissingAttribute",
+					"search_key": "module[s3_bucket]",
+					"search_line": 0,
+					"search_value": "",
+					"expected_value": "'block_public_policy' is equal 'true'",
+					"actual_value": "'block_public_policy' is missing"
+				},
+				{
+					"file_name": "kics/assets/queries/terraform/aws/s3_bucket_without_enabled_mfa_delete/test/positive8.tf",
+					"similarity_id": "3bd19717efc8693acaf627c80a21fb50762e9a78cb903911b28d014510d2101a",
 					"line": 1,
 					"resource_type": "n/a",
 					"resource_name": "n/a",
@@ -88,6 +75,19 @@
 					"actual_value": "'block_public_policy' is missing"
 				},
 				{
+					"file_name": "kics/assets/queries/terraform/aws/s3_bucket_without_enabled_mfa_delete/test/negative3.tf",
+					"similarity_id": "ef314b6546e2787f4acc1f777a7f0f8cbc571a6e5916e17e9db67c245600efbf",
+					"line": 1,
+					"resource_type": "n/a",
+					"resource_name": "n/a",
+					"issue_type": "MissingAttribute",
+					"search_key": "module[s3_bucket]",
+					"search_line": 0,
+					"search_value": "",
+					"expected_value": "'block_public_policy' is equal 'true'",
+					"actual_value": "'block_public_policy' is missing"
+				},
+				{
 					"file_name": "kics/assets/queries/terraform/aws/s3_bucket_without_enabled_mfa_delete/test/positive5.tf",
 					"similarity_id": "c7c0e58388169c2450619656ed88b8e937dbf6ab0864a032a74c5404f2cfb3d2",
 					"line": 1,
@@ -101,8 +101,8 @@
 					"actual_value": "'block_public_policy' is missing"
 				},
 				{
-					"file_name": "kics/assets/queries/terraform/aws/s3_bucket_without_enabled_mfa_delete/test/positive8.tf",
-					"similarity_id": "3bd19717efc8693acaf627c80a21fb50762e9a78cb903911b28d014510d2101a",
+					"file_name": "kics/assets/queries/terraform/aws/s3_bucket_without_enabled_mfa_delete/test/positive6.tf",
+					"similarity_id": "d7ef65b7ba55c8578f533c4a7994713be590ffe9aa018a9aef8d04c4e6776489",
 					"line": 1,
 					"resource_type": "n/a",
 					"resource_name": "n/a",
@@ -126,45 +126,6 @@
 			"description": "If algorithm is AES256 then the master key is null, empty or undefined, otherwise the master key is required",
 			"description_id": "b386c506",
 			"files": [
-				{
-					"file_name": "kics/assets/queries/terraform/aws/s3_bucket_without_enabled_mfa_delete/test/positive2.tf",
-					"similarity_id": "ede808e52bd2a021d207f8c1a4ff7a72ec61e8e02d0e0b6439e42055185a0c50",
-					"line": 14,
-					"resource_type": "aws_s3_bucket",
-					"resource_name": "my-tf-test-bucket",
-					"issue_type": "MissingAttribute",
-					"search_key": "aws_s3_bucket[positive2]",
-					"search_line": 0,
-					"search_value": "",
-					"expected_value": "'aws_s3_bucket' to have 'server_side_encryption_configuration' associated",
-					"actual_value": "'aws_s3_bucket' does not have 'server_side_encryption_configuration' associated"
-				},
-				{
-					"file_name": "kics/assets/queries/terraform/aws/s3_bucket_without_enabled_mfa_delete/test/positive6.tf",
-					"similarity_id": "0d9d7605430aa383695abaaa5f8cb9592d9da79f2818318b3f305520b4527652",
-					"line": 1,
-					"resource_type": "n/a",
-					"resource_name": "n/a",
-					"issue_type": "MissingAttribute",
-					"search_key": "module[s3_bucket]",
-					"search_line": 0,
-					"search_value": "",
-					"expected_value": "'server_side_encryption_configuration' to be defined and not null",
-					"actual_value": "'server_side_encryption_configuration' is undefined or null"
-				},
-				{
-					"file_name": "kics/assets/queries/terraform/aws/s3_bucket_without_enabled_mfa_delete/test/positive8.tf",
-					"similarity_id": "622ed330ae946cd74996bbcbe389ab7995c5e6c2e7b745575a4b825b8137a38f",
-					"line": 1,
-					"resource_type": "n/a",
-					"resource_name": "n/a",
-					"issue_type": "MissingAttribute",
-					"search_key": "module[s3_bucket]",
-					"search_line": 0,
-					"search_value": "",
-					"expected_value": "'server_side_encryption_configuration' to be defined and not null",
-					"actual_value": "'server_side_encryption_configuration' is undefined or null"
-				},
 				{
 					"file_name": "kics/assets/queries/terraform/aws/s3_bucket_without_enabled_mfa_delete/test/negative1.tf",
 					"similarity_id": "a0156ec250a92401822851f544cb5e286acc97a217800d2d825fdb1c05c151e7",
@@ -192,6 +153,19 @@
 					"actual_value": "'aws_s3_bucket' does not have 'server_side_encryption_configuration' associated"
 				},
 				{
+					"file_name": "kics/assets/queries/terraform/aws/s3_bucket_without_enabled_mfa_delete/test/negative4.tf",
+					"similarity_id": "6c498c316ea02cc880527a7df8f46151635a55f86a084e3af28628a1a5127aa1",
+					"line": 14,
+					"resource_type": "aws_s3_bucket",
+					"resource_name": "my-tf-test-bucket",
+					"issue_type": "MissingAttribute",
+					"search_key": "aws_s3_bucket[negative4]",
+					"search_line": 0,
+					"search_value": "",
+					"expected_value": "'aws_s3_bucket' to have 'server_side_encryption_configuration' associated",
+					"actual_value": "'aws_s3_bucket' does not have 'server_side_encryption_configuration' associated"
+				},
+				{
 					"file_name": "kics/assets/queries/terraform/aws/s3_bucket_without_enabled_mfa_delete/test/positive3.tf",
 					"similarity_id": "7dc62dd379198c033c2e82fff8ec594926d925a0133d4325c47cd3acff0a2913",
 					"line": 14,
@@ -203,6 +177,58 @@
 					"search_value": "",
 					"expected_value": "'aws_s3_bucket' to have 'server_side_encryption_configuration' associated",
 					"actual_value": "'aws_s3_bucket' does not have 'server_side_encryption_configuration' associated"
+				},
+				{
+					"file_name": "kics/assets/queries/terraform/aws/s3_bucket_without_enabled_mfa_delete/test/negative5.tf",
+					"similarity_id": "64a908c5e87c447e0692c231efd03608a889e6ad8f08781dcbebe75a55239254",
+					"line": 14,
+					"resource_type": "aws_s3_bucket",
+					"resource_name": "my-tf-test-bucket",
+					"issue_type": "MissingAttribute",
+					"search_key": "aws_s3_bucket[bb]",
+					"search_line": 0,
+					"search_value": "",
+					"expected_value": "'aws_s3_bucket' to have 'server_side_encryption_configuration' associated",
+					"actual_value": "'aws_s3_bucket' does not have 'server_side_encryption_configuration' associated"
+				},
+				{
+					"file_name": "kics/assets/queries/terraform/aws/s3_bucket_without_enabled_mfa_delete/test/positive2.tf",
+					"similarity_id": "ede808e52bd2a021d207f8c1a4ff7a72ec61e8e02d0e0b6439e42055185a0c50",
+					"line": 14,
+					"resource_type": "aws_s3_bucket",
+					"resource_name": "my-tf-test-bucket",
+					"issue_type": "MissingAttribute",
+					"search_key": "aws_s3_bucket[positive2]",
+					"search_line": 0,
+					"search_value": "",
+					"expected_value": "'aws_s3_bucket' to have 'server_side_encryption_configuration' associated",
+					"actual_value": "'aws_s3_bucket' does not have 'server_side_encryption_configuration' associated"
+				},
+				{
+					"file_name": "kics/assets/queries/terraform/aws/s3_bucket_without_enabled_mfa_delete/test/positive7.tf",
+					"similarity_id": "44a79e869bd6fda2dca05c78b8c1fc35335a68737e7c91cd7c7cbfd976be6fb9",
+					"line": 1,
+					"resource_type": "n/a",
+					"resource_name": "n/a",
+					"issue_type": "MissingAttribute",
+					"search_key": "module[s3_bucket]",
+					"search_line": 0,
+					"search_value": "",
+					"expected_value": "'server_side_encryption_configuration' to be defined and not null",
+					"actual_value": "'server_side_encryption_configuration' is undefined or null"
+				},
+				{
+					"file_name": "kics/assets/queries/terraform/aws/s3_bucket_without_enabled_mfa_delete/test/positive8.tf",
+					"similarity_id": "622ed330ae946cd74996bbcbe389ab7995c5e6c2e7b745575a4b825b8137a38f",
+					"line": 1,
+					"resource_type": "n/a",
+					"resource_name": "n/a",
+					"issue_type": "MissingAttribute",
+					"search_key": "module[s3_bucket]",
+					"search_line": 0,
+					"search_value": "",
+					"expected_value": "'server_side_encryption_configuration' to be defined and not null",
+					"actual_value": "'server_side_encryption_configuration' is undefined or null"
 				},
 				{
 					"file_name": "kics/assets/queries/terraform/aws/s3_bucket_without_enabled_mfa_delete/test/positive5.tf",
@@ -218,21 +244,8 @@
 					"actual_value": "'server_side_encryption_configuration' is undefined or null"
 				},
 				{
-					"file_name": "kics/assets/queries/terraform/aws/s3_bucket_without_enabled_mfa_delete/test/negative4.tf",
-					"similarity_id": "6c498c316ea02cc880527a7df8f46151635a55f86a084e3af28628a1a5127aa1",
-					"line": 14,
-					"resource_type": "aws_s3_bucket",
-					"resource_name": "my-tf-test-bucket",
-					"issue_type": "MissingAttribute",
-					"search_key": "aws_s3_bucket[negative4]",
-					"search_line": 0,
-					"search_value": "",
-					"expected_value": "'aws_s3_bucket' to have 'server_side_encryption_configuration' associated",
-					"actual_value": "'aws_s3_bucket' does not have 'server_side_encryption_configuration' associated"
-				},
-				{
-					"file_name": "kics/assets/queries/terraform/aws/s3_bucket_without_enabled_mfa_delete/test/negative3.tf",
-					"similarity_id": "a24e8c48d9927982832524e3d0d447ea76031fcc703b67cc82b85b50a2481868",
+					"file_name": "kics/assets/queries/terraform/aws/s3_bucket_without_enabled_mfa_delete/test/negative2.tf",
+					"similarity_id": "39ce58b9fc32b46368726f5452d645c1f8ac405ed9dfa4a549aa73b231b99c61",
 					"line": 1,
 					"resource_type": "n/a",
 					"resource_name": "n/a",
@@ -244,8 +257,34 @@
 					"actual_value": "'server_side_encryption_configuration' is undefined or null"
 				},
 				{
-					"file_name": "kics/assets/queries/terraform/aws/s3_bucket_without_enabled_mfa_delete/test/positive7.tf",
-					"similarity_id": "44a79e869bd6fda2dca05c78b8c1fc35335a68737e7c91cd7c7cbfd976be6fb9",
+					"file_name": "kics/assets/queries/terraform/aws/s3_bucket_without_enabled_mfa_delete/test/positive4.tf",
+					"similarity_id": "0f2dcb60793b0344eba0b8c1960d6f7fb31a487c2d0ce47a69efa3e8eb7869e1",
+					"line": 14,
+					"resource_type": "aws_s3_bucket",
+					"resource_name": "my-tf-test-bucket",
+					"issue_type": "MissingAttribute",
+					"search_key": "aws_s3_bucket[positive3]",
+					"search_line": 0,
+					"search_value": "",
+					"expected_value": "'aws_s3_bucket' to have 'server_side_encryption_configuration' associated",
+					"actual_value": "'aws_s3_bucket' does not have 'server_side_encryption_configuration' associated"
+				},
+				{
+					"file_name": "kics/assets/queries/terraform/aws/s3_bucket_without_enabled_mfa_delete/test/positive1.tf",
+					"similarity_id": "7c0f1e4d90d287815e75790740974b2fab12391ab2d911e3fdc8e1f6abe33ab8",
+					"line": 14,
+					"resource_type": "aws_s3_bucket",
+					"resource_name": "my-tf-test-bucket",
+					"issue_type": "MissingAttribute",
+					"search_key": "aws_s3_bucket[positive1]",
+					"search_line": 0,
+					"search_value": "",
+					"expected_value": "'aws_s3_bucket' to have 'server_side_encryption_configuration' associated",
+					"actual_value": "'aws_s3_bucket' does not have 'server_side_encryption_configuration' associated"
+				},
+				{
+					"file_name": "kics/assets/queries/terraform/aws/s3_bucket_without_enabled_mfa_delete/test/negative3.tf",
+					"similarity_id": "a24e8c48d9927982832524e3d0d447ea76031fcc703b67cc82b85b50a2481868",
 					"line": 1,
 					"resource_type": "n/a",
 					"resource_name": "n/a",
@@ -270,34 +309,8 @@
 					"actual_value": "'aws_s3_bucket' does not have 'server_side_encryption_configuration' associated"
 				},
 				{
-					"file_name": "kics/assets/queries/terraform/aws/s3_bucket_without_enabled_mfa_delete/test/negative5.tf",
-					"similarity_id": "64a908c5e87c447e0692c231efd03608a889e6ad8f08781dcbebe75a55239254",
-					"line": 14,
-					"resource_type": "aws_s3_bucket",
-					"resource_name": "my-tf-test-bucket",
-					"issue_type": "MissingAttribute",
-					"search_key": "aws_s3_bucket[bb]",
-					"search_line": 0,
-					"search_value": "",
-					"expected_value": "'aws_s3_bucket' to have 'server_side_encryption_configuration' associated",
-					"actual_value": "'aws_s3_bucket' does not have 'server_side_encryption_configuration' associated"
-				},
-				{
-					"file_name": "kics/assets/queries/terraform/aws/s3_bucket_without_enabled_mfa_delete/test/positive4.tf",
-					"similarity_id": "0f2dcb60793b0344eba0b8c1960d6f7fb31a487c2d0ce47a69efa3e8eb7869e1",
-					"line": 14,
-					"resource_type": "aws_s3_bucket",
-					"resource_name": "my-tf-test-bucket",
-					"issue_type": "MissingAttribute",
-					"search_key": "aws_s3_bucket[positive3]",
-					"search_line": 0,
-					"search_value": "",
-					"expected_value": "'aws_s3_bucket' to have 'server_side_encryption_configuration' associated",
-					"actual_value": "'aws_s3_bucket' does not have 'server_side_encryption_configuration' associated"
-				},
-				{
-					"file_name": "kics/assets/queries/terraform/aws/s3_bucket_without_enabled_mfa_delete/test/negative2.tf",
-					"similarity_id": "39ce58b9fc32b46368726f5452d645c1f8ac405ed9dfa4a549aa73b231b99c61",
+					"file_name": "kics/assets/queries/terraform/aws/s3_bucket_without_enabled_mfa_delete/test/positive6.tf",
+					"similarity_id": "0d9d7605430aa383695abaaa5f8cb9592d9da79f2818318b3f305520b4527652",
 					"line": 1,
 					"resource_type": "n/a",
 					"resource_name": "n/a",
@@ -307,19 +320,6 @@
 					"search_value": "",
 					"expected_value": "'server_side_encryption_configuration' to be defined and not null",
 					"actual_value": "'server_side_encryption_configuration' is undefined or null"
-				},
-				{
-					"file_name": "kics/assets/queries/terraform/aws/s3_bucket_without_enabled_mfa_delete/test/positive1.tf",
-					"similarity_id": "7c0f1e4d90d287815e75790740974b2fab12391ab2d911e3fdc8e1f6abe33ab8",
-					"line": 14,
-					"resource_type": "aws_s3_bucket",
-					"resource_name": "my-tf-test-bucket",
-					"issue_type": "MissingAttribute",
-					"search_key": "aws_s3_bucket[positive1]",
-					"search_line": 0,
-					"search_value": "",
-					"expected_value": "'aws_s3_bucket' to have 'server_side_encryption_configuration' associated",
-					"actual_value": "'aws_s3_bucket' does not have 'server_side_encryption_configuration' associated"
 				}
 			]
 		},
@@ -338,6 +338,19 @@
 			"cis_description_text": "Once MFA Delete is enabled on your sensitive and classified S3 bucket it requires the user to have two forms of authentication.\nAdding MFA delete to an S3 bucket, requires additional authentication when you change the version state of your bucket or you delete and object version adding another layer of security in the event your security credentials are compromised or unauthorized access is granted.",
 			"files": [
 				{
+					"file_name": "kics/assets/queries/terraform/aws/s3_bucket_without_enabled_mfa_delete/test/positive7.tf",
+					"similarity_id": "fddd9545813d690eb8effc2eee4ac7f960f66af7e48eabfef7de3c723a876750",
+					"line": 10,
+					"resource_type": "n/a",
+					"resource_name": "n/a",
+					"issue_type": "IncorrectValue",
+					"search_key": "module[s3_bucket].versioning.mfa_delete",
+					"search_line": 0,
+					"search_value": "",
+					"expected_value": "'mfa_delete' to be set to true",
+					"actual_value": "'mfa_delete' is set to false"
+				},
+				{
 					"file_name": "kics/assets/queries/terraform/aws/s3_bucket_without_enabled_mfa_delete/test/positive8.tf",
 					"similarity_id": "94a6d3185e1aed40cde689886568d98fbb8bb730c402b8aaeefb81352f9bb3e5",
 					"line": 9,
@@ -349,6 +362,58 @@
 					"search_value": "",
 					"expected_value": "'enabled' to be set to true",
 					"actual_value": "'enabled' is set to false"
+				},
+				{
+					"file_name": "kics/assets/queries/terraform/aws/s3_bucket_without_enabled_mfa_delete/test/positive9.tf",
+					"similarity_id": "ca05660677cea3ff9fd1b174ebe93d0ac8e928309ea5d1baa6f775b1795d9bc7",
+					"line": 28,
+					"resource_type": "aws_s3_bucket_versioning",
+					"resource_name": "example2",
+					"issue_type": "IncorrectValue",
+					"search_key": "aws_s3_bucket_versioning[example2].versioning_configuration.mfa_delete",
+					"search_line": 0,
+					"search_value": "",
+					"expected_value": "'versioning_configuration.mfa_delete' to be set to 'Enabled'",
+					"actual_value": "'versioning_configuration.mfa_delete' is set to 'Disabled'"
+				},
+				{
+					"file_name": "kics/assets/queries/terraform/aws/s3_bucket_without_enabled_mfa_delete/test/positive10.tf",
+					"similarity_id": "387b46d31fc86d24ad5bbd768a542488d5eef1098b43730ffcf3faa11f9d32d7",
+					"line": 27,
+					"resource_type": "aws_s3_bucket_versioning",
+					"resource_name": "example",
+					"issue_type": "IncorrectValue",
+					"search_key": "aws_s3_bucket_versioning[example].versioning_configuration.status",
+					"search_line": 0,
+					"search_value": "",
+					"expected_value": "'versioning_configuration.status' to be set to 'Enabled'",
+					"actual_value": "'versioning_configuration.status' is set to 'Disabled'"
+				},
+				{
+					"file_name": "kics/assets/queries/terraform/aws/s3_bucket_without_enabled_mfa_delete/test/positive3.tf",
+					"similarity_id": "765134e26d96c53da7a0fa5f0eb5f618b54d9fa68083bf4c8e07a5f2b4ff2a68",
+					"line": 25,
+					"resource_type": "aws_s3_bucket",
+					"resource_name": "my-tf-test-bucket",
+					"issue_type": "IncorrectValue",
+					"search_key": "aws_s3_bucket[positive3].versioning.mfa_delete",
+					"search_line": 0,
+					"search_value": "",
+					"expected_value": "'mfa_delete' to be set to true",
+					"actual_value": "'mfa_delete' is set to false"
+				},
+				{
+					"file_name": "kics/assets/queries/terraform/aws/s3_bucket_without_enabled_mfa_delete/test/positive6.tf",
+					"similarity_id": "85ba7ddbaa1c5c4ec6f76bbc372a23446642bd8e39f820de57120d5859188730",
+					"line": 8,
+					"resource_type": "n/a",
+					"resource_name": "n/a",
+					"issue_type": "MissingAttribute",
+					"search_key": "module[s3_bucket].versioning",
+					"search_line": 0,
+					"search_value": "",
+					"expected_value": "'mfa_delete' to be set to true",
+					"actual_value": "'mfa_delete' is undefined or null"
 				},
 				{
 					"file_name": "kics/assets/queries/terraform/aws/s3_bucket_without_enabled_mfa_delete/test/positive1.tf",
@@ -377,6 +442,19 @@
 					"actual_value": "'mfa_delete' is undefined or null"
 				},
 				{
+					"file_name": "kics/assets/queries/terraform/aws/s3_bucket_without_enabled_mfa_delete/test/positive4.tf",
+					"similarity_id": "be5addecbd2dbba1b0d95f6f41a558f161a642c1aa504f77a2117642bc961bd5",
+					"line": 24,
+					"resource_type": "aws_s3_bucket",
+					"resource_name": "my-tf-test-bucket",
+					"issue_type": "IncorrectValue",
+					"search_key": "aws_s3_bucket[positive3].versioning.enabled",
+					"search_line": 0,
+					"search_value": "",
+					"expected_value": "'enabled' to be set to true",
+					"actual_value": "'enabled' is set to false"
+				},
+				{
 					"file_name": "kics/assets/queries/terraform/aws/s3_bucket_without_enabled_mfa_delete/test/positive5.tf",
 					"similarity_id": "ad329fdd79ef65dfd2e6487fe77abc3aa5894533b69aa946191912633a26e1cd",
 					"line": 1,
@@ -403,71 +481,6 @@
 					"actual_value": "'mfa_delete' is undefined or null"
 				},
 				{
-					"file_name": "kics/assets/queries/terraform/aws/s3_bucket_without_enabled_mfa_delete/test/positive10.tf",
-					"similarity_id": "387b46d31fc86d24ad5bbd768a542488d5eef1098b43730ffcf3faa11f9d32d7",
-					"line": 27,
-					"resource_type": "aws_s3_bucket_versioning",
-					"resource_name": "example",
-					"issue_type": "IncorrectValue",
-					"search_key": "aws_s3_bucket_versioning[example].versioning_configuration.status",
-					"search_line": 0,
-					"search_value": "",
-					"expected_value": "'versioning_configuration.status' to be set to 'Enabled'",
-					"actual_value": "'versioning_configuration.status' is set to 'Disabled'"
-				},
-				{
-					"file_name": "kics/assets/queries/terraform/aws/s3_bucket_without_enabled_mfa_delete/test/positive7.tf",
-					"similarity_id": "fddd9545813d690eb8effc2eee4ac7f960f66af7e48eabfef7de3c723a876750",
-					"line": 10,
-					"resource_type": "n/a",
-					"resource_name": "n/a",
-					"issue_type": "IncorrectValue",
-					"search_key": "module[s3_bucket].versioning.mfa_delete",
-					"search_line": 0,
-					"search_value": "",
-					"expected_value": "'mfa_delete' to be set to true",
-					"actual_value": "'mfa_delete' is set to false"
-				},
-				{
-					"file_name": "kics/assets/queries/terraform/aws/s3_bucket_without_enabled_mfa_delete/test/positive6.tf",
-					"similarity_id": "85ba7ddbaa1c5c4ec6f76bbc372a23446642bd8e39f820de57120d5859188730",
-					"line": 8,
-					"resource_type": "n/a",
-					"resource_name": "n/a",
-					"issue_type": "MissingAttribute",
-					"search_key": "module[s3_bucket].versioning",
-					"search_line": 0,
-					"search_value": "",
-					"expected_value": "'mfa_delete' to be set to true",
-					"actual_value": "'mfa_delete' is undefined or null"
-				},
-				{
-					"file_name": "kics/assets/queries/terraform/aws/s3_bucket_without_enabled_mfa_delete/test/positive9.tf",
-					"similarity_id": "ca05660677cea3ff9fd1b174ebe93d0ac8e928309ea5d1baa6f775b1795d9bc7",
-					"line": 28,
-					"resource_type": "aws_s3_bucket_versioning",
-					"resource_name": "example2",
-					"issue_type": "IncorrectValue",
-					"search_key": "aws_s3_bucket_versioning[example2].versioning_configuration.mfa_delete",
-					"search_line": 0,
-					"search_value": "",
-					"expected_value": "'versioning_configuration.mfa_delete' to be set to 'Enabled'",
-					"actual_value": "'versioning_configuration.mfa_delete' is set to 'Disabled'"
-				},
-				{
-					"file_name": "kics/assets/queries/terraform/aws/s3_bucket_without_enabled_mfa_delete/test/positive3.tf",
-					"similarity_id": "765134e26d96c53da7a0fa5f0eb5f618b54d9fa68083bf4c8e07a5f2b4ff2a68",
-					"line": 25,
-					"resource_type": "aws_s3_bucket",
-					"resource_name": "my-tf-test-bucket",
-					"issue_type": "IncorrectValue",
-					"search_key": "aws_s3_bucket[positive3].versioning.mfa_delete",
-					"search_line": 0,
-					"search_value": "",
-					"expected_value": "'mfa_delete' to be set to true",
-					"actual_value": "'mfa_delete' is set to false"
-				},
-				{
 					"file_name": "kics/assets/queries/terraform/aws/s3_bucket_without_enabled_mfa_delete/test/positive4.tf",
 					"similarity_id": "322cc6a7fdd246df61214ec970975922a18c37e20ddf7e62c0414dc3cf8d10ce",
 					"line": 23,
@@ -479,19 +492,6 @@
 					"search_value": "",
 					"expected_value": "'mfa_delete' to be set to true",
 					"actual_value": "'mfa_delete' is undefined or null"
-				},
-				{
-					"file_name": "kics/assets/queries/terraform/aws/s3_bucket_without_enabled_mfa_delete/test/positive4.tf",
-					"similarity_id": "be5addecbd2dbba1b0d95f6f41a558f161a642c1aa504f77a2117642bc961bd5",
-					"line": 24,
-					"resource_type": "aws_s3_bucket",
-					"resource_name": "my-tf-test-bucket",
-					"issue_type": "IncorrectValue",
-					"search_key": "aws_s3_bucket[positive3].versioning.enabled",
-					"search_line": 0,
-					"search_value": "",
-					"expected_value": "'enabled' to be set to true",
-					"actual_value": "'enabled' is set to false"
 				}
 			]
 		},
@@ -507,32 +507,6 @@
 			"description_id": "a6e86c32",
 			"files": [
 				{
-					"file_name": "kics/assets/queries/terraform/aws/s3_bucket_without_enabled_mfa_delete/test/positive8.tf",
-					"similarity_id": "3f6179f09bf4f0bd652d666d55f56bef4ec8b652928444c9b41a28066b3e516e",
-					"line": 1,
-					"resource_type": "n/a",
-					"resource_name": "n/a",
-					"issue_type": "MissingAttribute",
-					"search_key": "module[s3_bucket]",
-					"search_line": 0,
-					"search_value": "",
-					"expected_value": "'restrict_public_buckets' is equal 'true'",
-					"actual_value": "'restrict_public_buckets' is missing"
-				},
-				{
-					"file_name": "kics/assets/queries/terraform/aws/s3_bucket_without_enabled_mfa_delete/test/positive6.tf",
-					"similarity_id": "9ababca974d321949550907349a7f1b1b1177c380f58d3058efa1b2c1abb65f8",
-					"line": 1,
-					"resource_type": "n/a",
-					"resource_name": "n/a",
-					"issue_type": "MissingAttribute",
-					"search_key": "module[s3_bucket]",
-					"search_line": 0,
-					"search_value": "",
-					"expected_value": "'restrict_public_buckets' is equal 'true'",
-					"actual_value": "'restrict_public_buckets' is missing"
-				},
-				{
 					"file_name": "kics/assets/queries/terraform/aws/s3_bucket_without_enabled_mfa_delete/test/negative2.tf",
 					"similarity_id": "f10670d7ae51f714ecf5cc81d4c34f7618d0f08107b2a09ba942b36c74b28d46",
 					"line": 1,
@@ -546,8 +520,8 @@
 					"actual_value": "'restrict_public_buckets' is missing"
 				},
 				{
-					"file_name": "kics/assets/queries/terraform/aws/s3_bucket_without_enabled_mfa_delete/test/positive7.tf",
-					"similarity_id": "dd24be01ab8df06de7468b7dbd0e0301185e85f126040585dc19c2e043b4a96e",
+					"file_name": "kics/assets/queries/terraform/aws/s3_bucket_without_enabled_mfa_delete/test/positive8.tf",
+					"similarity_id": "3f6179f09bf4f0bd652d666d55f56bef4ec8b652928444c9b41a28066b3e516e",
 					"line": 1,
 					"resource_type": "n/a",
 					"resource_name": "n/a",
@@ -572,8 +546,34 @@
 					"actual_value": "'restrict_public_buckets' is missing"
 				},
 				{
+					"file_name": "kics/assets/queries/terraform/aws/s3_bucket_without_enabled_mfa_delete/test/positive7.tf",
+					"similarity_id": "dd24be01ab8df06de7468b7dbd0e0301185e85f126040585dc19c2e043b4a96e",
+					"line": 1,
+					"resource_type": "n/a",
+					"resource_name": "n/a",
+					"issue_type": "MissingAttribute",
+					"search_key": "module[s3_bucket]",
+					"search_line": 0,
+					"search_value": "",
+					"expected_value": "'restrict_public_buckets' is equal 'true'",
+					"actual_value": "'restrict_public_buckets' is missing"
+				},
+				{
 					"file_name": "kics/assets/queries/terraform/aws/s3_bucket_without_enabled_mfa_delete/test/positive5.tf",
 					"similarity_id": "f4d7bf5aeb856b204a1ea604055840de9315028b7c40014b51486feab6e16024",
+					"line": 1,
+					"resource_type": "n/a",
+					"resource_name": "n/a",
+					"issue_type": "MissingAttribute",
+					"search_key": "module[s3_bucket]",
+					"search_line": 0,
+					"search_value": "",
+					"expected_value": "'restrict_public_buckets' is equal 'true'",
+					"actual_value": "'restrict_public_buckets' is missing"
+				},
+				{
+					"file_name": "kics/assets/queries/terraform/aws/s3_bucket_without_enabled_mfa_delete/test/positive6.tf",
+					"similarity_id": "9ababca974d321949550907349a7f1b1b1177c380f58d3058efa1b2c1abb65f8",
 					"line": 1,
 					"resource_type": "n/a",
 					"resource_name": "n/a",
@@ -598,19 +598,6 @@
 			"description_id": "7b8886c1",
 			"files": [
 				{
-					"file_name": "kics/assets/queries/terraform/aws/s3_bucket_without_enabled_mfa_delete/test/positive8.tf",
-					"similarity_id": "21dab4556bd10bb085a0d7c4ba542296e5d8b5e166d3a0129be183bbdcebf48a",
-					"line": 1,
-					"resource_type": "n/a",
-					"resource_name": "n/a",
-					"issue_type": "MissingAttribute",
-					"search_key": "module[s3_bucket]",
-					"search_line": 0,
-					"search_value": "",
-					"expected_value": "'block_public_acls' is equal 'true'",
-					"actual_value": "'block_public_acls' is missing"
-				},
-				{
 					"file_name": "kics/assets/queries/terraform/aws/s3_bucket_without_enabled_mfa_delete/test/positive6.tf",
 					"similarity_id": "3f57a6f32db9ebf0d1da3a73122381ae2b7605a6ba3dc432219fe9fd5a44d7d5",
 					"line": 1,
@@ -624,8 +611,8 @@
 					"actual_value": "'block_public_acls' is missing"
 				},
 				{
-					"file_name": "kics/assets/queries/terraform/aws/s3_bucket_without_enabled_mfa_delete/test/negative3.tf",
-					"similarity_id": "8f0e816728d354bc00be7added1bc6ce88fdd790ba31042641274d9a3d467725",
+					"file_name": "kics/assets/queries/terraform/aws/s3_bucket_without_enabled_mfa_delete/test/negative2.tf",
+					"similarity_id": "e99d9c03993beeb859df98aa846491dd2fbc4db2a7263247ebe3e18e4686de24",
 					"line": 1,
 					"resource_type": "n/a",
 					"resource_name": "n/a",
@@ -637,8 +624,8 @@
 					"actual_value": "'block_public_acls' is missing"
 				},
 				{
-					"file_name": "kics/assets/queries/terraform/aws/s3_bucket_without_enabled_mfa_delete/test/positive5.tf",
-					"similarity_id": "74172f697f2244a42d1bde9804a6bc4acb11b449215e1e49533f2cb36919066a",
+					"file_name": "kics/assets/queries/terraform/aws/s3_bucket_without_enabled_mfa_delete/test/positive8.tf",
+					"similarity_id": "21dab4556bd10bb085a0d7c4ba542296e5d8b5e166d3a0129be183bbdcebf48a",
 					"line": 1,
 					"resource_type": "n/a",
 					"resource_name": "n/a",
@@ -663,8 +650,21 @@
 					"actual_value": "'block_public_acls' is missing"
 				},
 				{
-					"file_name": "kics/assets/queries/terraform/aws/s3_bucket_without_enabled_mfa_delete/test/negative2.tf",
-					"similarity_id": "e99d9c03993beeb859df98aa846491dd2fbc4db2a7263247ebe3e18e4686de24",
+					"file_name": "kics/assets/queries/terraform/aws/s3_bucket_without_enabled_mfa_delete/test/positive5.tf",
+					"similarity_id": "74172f697f2244a42d1bde9804a6bc4acb11b449215e1e49533f2cb36919066a",
+					"line": 1,
+					"resource_type": "n/a",
+					"resource_name": "n/a",
+					"issue_type": "MissingAttribute",
+					"search_key": "module[s3_bucket]",
+					"search_line": 0,
+					"search_value": "",
+					"expected_value": "'block_public_acls' is equal 'true'",
+					"actual_value": "'block_public_acls' is missing"
+				},
+				{
+					"file_name": "kics/assets/queries/terraform/aws/s3_bucket_without_enabled_mfa_delete/test/negative3.tf",
+					"similarity_id": "8f0e816728d354bc00be7added1bc6ce88fdd790ba31042641274d9a3d467725",
 					"line": 1,
 					"resource_type": "n/a",
 					"resource_name": "n/a",
@@ -689,6 +689,19 @@
 			"description_id": "7614ce3b",
 			"files": [
 				{
+					"file_name": "kics/assets/queries/terraform/aws/s3_bucket_without_enabled_mfa_delete/test/positive8.tf",
+					"similarity_id": "f259f3d0b90771a1f03857f6bf500a6280b09553c0b54a276b22dc213d48b829",
+					"line": 9,
+					"resource_type": "n/a",
+					"resource_name": "n/a",
+					"issue_type": "IncorrectValue",
+					"search_key": "module[s3_bucket].versioning.enabled",
+					"search_line": 0,
+					"search_value": "",
+					"expected_value": "'versioning.enabled' to be true",
+					"actual_value": "'versioning.enabled' is set to false"
+				},
+				{
 					"file_name": "kics/assets/queries/terraform/aws/s3_bucket_without_enabled_mfa_delete/test/positive1.tf",
 					"similarity_id": "d358119ed762324baa1f65907b23dc82bb017fb75201de612c6a0c424a2b8c49",
 					"line": 14,
@@ -702,19 +715,6 @@
 					"actual_value": "'versioning' is undefined or null"
 				},
 				{
-					"file_name": "kics/assets/queries/terraform/aws/s3_bucket_without_enabled_mfa_delete/test/negative3.tf",
-					"similarity_id": "9133a083b1121684470d07c6df778930410e70f76aa3466773019258e3fbf3b4",
-					"line": 1,
-					"resource_type": "n/a",
-					"resource_name": "n/a",
-					"issue_type": "MissingAttribute",
-					"search_key": "module[s3_bucket]",
-					"search_line": 0,
-					"search_value": "",
-					"expected_value": "'versioning' to be true",
-					"actual_value": "'versioning' is undefined or null"
-				},
-				{
 					"file_name": "kics/assets/queries/terraform/aws/s3_bucket_without_enabled_mfa_delete/test/negative4.tf",
 					"similarity_id": "7ef72ab2582ccd7e4b5b99dfe4085d25128e1951094221385e7c97a242204d5f",
 					"line": 14,
@@ -722,6 +722,19 @@
 					"resource_name": "my-tf-test-bucket",
 					"issue_type": "MissingAttribute",
 					"search_key": "aws_s3_bucket[negative4]",
+					"search_line": 0,
+					"search_value": "",
+					"expected_value": "'versioning' to be true",
+					"actual_value": "'versioning' is undefined or null"
+				},
+				{
+					"file_name": "kics/assets/queries/terraform/aws/s3_bucket_without_enabled_mfa_delete/test/negative3.tf",
+					"similarity_id": "9133a083b1121684470d07c6df778930410e70f76aa3466773019258e3fbf3b4",
+					"line": 1,
+					"resource_type": "n/a",
+					"resource_name": "n/a",
+					"issue_type": "MissingAttribute",
+					"search_key": "module[s3_bucket]",
 					"search_line": 0,
 					"search_value": "",
 					"expected_value": "'versioning' to be true",
@@ -752,19 +765,6 @@
 					"search_value": "",
 					"expected_value": "'versioning' to be true",
 					"actual_value": "'versioning' is undefined or null"
-				},
-				{
-					"file_name": "kics/assets/queries/terraform/aws/s3_bucket_without_enabled_mfa_delete/test/positive8.tf",
-					"similarity_id": "f259f3d0b90771a1f03857f6bf500a6280b09553c0b54a276b22dc213d48b829",
-					"line": 9,
-					"resource_type": "n/a",
-					"resource_name": "n/a",
-					"issue_type": "IncorrectValue",
-					"search_key": "module[s3_bucket].versioning.enabled",
-					"search_line": 0,
-					"search_value": "",
-					"expected_value": "'versioning.enabled' to be true",
-					"actual_value": "'versioning.enabled' is set to false"
 				}
 			]
 		},
@@ -806,6 +806,19 @@
 			"description_id": "fa5c7c72",
 			"files": [
 				{
+					"file_name": "kics/assets/queries/terraform/aws/s3_bucket_without_enabled_mfa_delete/test/positive2.tf",
+					"similarity_id": "6f8ab7534b7ed46c869880583445efe77791082648a5093361d7b39496c11fa3",
+					"line": 14,
+					"resource_type": "aws_s3_bucket",
+					"resource_name": "my-tf-test-bucket",
+					"issue_type": "MissingAttribute",
+					"search_key": "aws_s3_bucket[positive2]",
+					"search_line": 0,
+					"search_value": "",
+					"expected_value": "'logging' to be defined and not null",
+					"actual_value": "'logging' is undefined or null"
+				},
+				{
 					"file_name": "kics/assets/queries/terraform/aws/s3_bucket_without_enabled_mfa_delete/test/positive1.tf",
 					"similarity_id": "a32d7170dcab487194079521e27410c535f92325630ed7fe3aa9f22bba8fc484",
 					"line": 14,
@@ -813,45 +826,6 @@
 					"resource_name": "my-tf-test-bucket",
 					"issue_type": "MissingAttribute",
 					"search_key": "aws_s3_bucket[positive1]",
-					"search_line": 0,
-					"search_value": "",
-					"expected_value": "'logging' to be defined and not null",
-					"actual_value": "'logging' is undefined or null"
-				},
-				{
-					"file_name": "kics/assets/queries/terraform/aws/s3_bucket_without_enabled_mfa_delete/test/positive9.tf",
-					"similarity_id": "d52cefde89649bc79081ea0d8e839917fe3bdbc7cd55a774fe0e26a93f24e827",
-					"line": 14,
-					"resource_type": "aws_s3_bucket",
-					"resource_name": "my-tf-test-bucket",
-					"issue_type": "MissingAttribute",
-					"search_key": "aws_s3_bucket[b0]",
-					"search_line": 0,
-					"search_value": "",
-					"expected_value": "'logging' to be defined and not null",
-					"actual_value": "'logging' is undefined or null"
-				},
-				{
-					"file_name": "kics/assets/queries/terraform/aws/s3_bucket_without_enabled_mfa_delete/test/negative1.tf",
-					"similarity_id": "b1497650193af0323dcc2f46fee9f69dc8a387d51375d4c619d0301c4913c3b6",
-					"line": 14,
-					"resource_type": "aws_s3_bucket",
-					"resource_name": "my-tf-test-bucket",
-					"issue_type": "MissingAttribute",
-					"search_key": "aws_s3_bucket[negative1]",
-					"search_line": 0,
-					"search_value": "",
-					"expected_value": "'logging' to be defined and not null",
-					"actual_value": "'logging' is undefined or null"
-				},
-				{
-					"file_name": "kics/assets/queries/terraform/aws/s3_bucket_without_enabled_mfa_delete/test/positive8.tf",
-					"similarity_id": "05bd2b9e77cbd5e9181d956488f332b9ef830df24c3d103d34e8d63a3370a56c",
-					"line": 1,
-					"resource_type": "n/a",
-					"resource_name": "n/a",
-					"issue_type": "MissingAttribute",
-					"search_key": "module[s3_bucket]",
 					"search_line": 0,
 					"search_value": "",
 					"expected_value": "'logging' to be defined and not null",
@@ -871,47 +845,8 @@
 					"actual_value": "'logging' is undefined or null"
 				},
 				{
-					"file_name": "kics/assets/queries/terraform/aws/s3_bucket_without_enabled_mfa_delete/test/positive2.tf",
-					"similarity_id": "6f8ab7534b7ed46c869880583445efe77791082648a5093361d7b39496c11fa3",
-					"line": 14,
-					"resource_type": "aws_s3_bucket",
-					"resource_name": "my-tf-test-bucket",
-					"issue_type": "MissingAttribute",
-					"search_key": "aws_s3_bucket[positive2]",
-					"search_line": 0,
-					"search_value": "",
-					"expected_value": "'logging' to be defined and not null",
-					"actual_value": "'logging' is undefined or null"
-				},
-				{
-					"file_name": "kics/assets/queries/terraform/aws/s3_bucket_without_enabled_mfa_delete/test/positive10.tf",
-					"similarity_id": "d36844176b9707813dd7a8f3571f81d89b6c5697d1bfb85371b7d5b9ed4da162",
-					"line": 14,
-					"resource_type": "aws_s3_bucket",
-					"resource_name": "my-tf-test-bucket",
-					"issue_type": "MissingAttribute",
-					"search_key": "aws_s3_bucket[bbb]",
-					"search_line": 0,
-					"search_value": "",
-					"expected_value": "'logging' to be defined and not null",
-					"actual_value": "'logging' is undefined or null"
-				},
-				{
-					"file_name": "kics/assets/queries/terraform/aws/s3_bucket_without_enabled_mfa_delete/test/positive4.tf",
-					"similarity_id": "35832eb5811003fa054ce4eb0e273aec860e6a039386d37e5d2209a541c457a5",
-					"line": 14,
-					"resource_type": "aws_s3_bucket",
-					"resource_name": "my-tf-test-bucket",
-					"issue_type": "MissingAttribute",
-					"search_key": "aws_s3_bucket[positive3]",
-					"search_line": 0,
-					"search_value": "",
-					"expected_value": "'logging' to be defined and not null",
-					"actual_value": "'logging' is undefined or null"
-				},
-				{
-					"file_name": "kics/assets/queries/terraform/aws/s3_bucket_without_enabled_mfa_delete/test/positive7.tf",
-					"similarity_id": "d2bf5e1dd22d7a1afc14c223ce40de23fab155ae5ceb0de0433b44addc0348b9",
+					"file_name": "kics/assets/queries/terraform/aws/s3_bucket_without_enabled_mfa_delete/test/negative3.tf",
+					"similarity_id": "17e6c32e75b99657ee77182d3e0109209e6d020fca95e66e956c0c1834d56145",
 					"line": 1,
 					"resource_type": "n/a",
 					"resource_name": "n/a",
@@ -936,13 +871,13 @@
 					"actual_value": "'logging' is undefined or null"
 				},
 				{
-					"file_name": "kics/assets/queries/terraform/aws/s3_bucket_without_enabled_mfa_delete/test/positive6.tf",
-					"similarity_id": "63dabd1f789492c68a02a5122300f08ec21dc4b5072532a33e87e5298b55175c",
-					"line": 1,
-					"resource_type": "n/a",
-					"resource_name": "n/a",
+					"file_name": "kics/assets/queries/terraform/aws/s3_bucket_without_enabled_mfa_delete/test/positive10.tf",
+					"similarity_id": "d36844176b9707813dd7a8f3571f81d89b6c5697d1bfb85371b7d5b9ed4da162",
+					"line": 14,
+					"resource_type": "aws_s3_bucket",
+					"resource_name": "my-tf-test-bucket",
 					"issue_type": "MissingAttribute",
-					"search_key": "module[s3_bucket]",
+					"search_key": "aws_s3_bucket[bbb]",
 					"search_line": 0,
 					"search_value": "",
 					"expected_value": "'logging' to be defined and not null",
@@ -951,19 +886,6 @@
 				{
 					"file_name": "kics/assets/queries/terraform/aws/s3_bucket_without_enabled_mfa_delete/test/negative2.tf",
 					"similarity_id": "6de33d675a0f504d9abfb8eb6347b7d71b130af5802e218052ac5e99eec7aa37",
-					"line": 1,
-					"resource_type": "n/a",
-					"resource_name": "n/a",
-					"issue_type": "MissingAttribute",
-					"search_key": "module[s3_bucket]",
-					"search_line": 0,
-					"search_value": "",
-					"expected_value": "'logging' to be defined and not null",
-					"actual_value": "'logging' is undefined or null"
-				},
-				{
-					"file_name": "kics/assets/queries/terraform/aws/s3_bucket_without_enabled_mfa_delete/test/negative3.tf",
-					"similarity_id": "17e6c32e75b99657ee77182d3e0109209e6d020fca95e66e956c0c1834d56145",
 					"line": 1,
 					"resource_type": "n/a",
 					"resource_name": "n/a",
@@ -999,6 +921,84 @@
 					"search_value": "",
 					"expected_value": "'logging' to be defined and not null",
 					"actual_value": "'logging' is undefined or null"
+				},
+				{
+					"file_name": "kics/assets/queries/terraform/aws/s3_bucket_without_enabled_mfa_delete/test/negative1.tf",
+					"similarity_id": "b1497650193af0323dcc2f46fee9f69dc8a387d51375d4c619d0301c4913c3b6",
+					"line": 14,
+					"resource_type": "aws_s3_bucket",
+					"resource_name": "my-tf-test-bucket",
+					"issue_type": "MissingAttribute",
+					"search_key": "aws_s3_bucket[negative1]",
+					"search_line": 0,
+					"search_value": "",
+					"expected_value": "'logging' to be defined and not null",
+					"actual_value": "'logging' is undefined or null"
+				},
+				{
+					"file_name": "kics/assets/queries/terraform/aws/s3_bucket_without_enabled_mfa_delete/test/positive8.tf",
+					"similarity_id": "05bd2b9e77cbd5e9181d956488f332b9ef830df24c3d103d34e8d63a3370a56c",
+					"line": 1,
+					"resource_type": "n/a",
+					"resource_name": "n/a",
+					"issue_type": "MissingAttribute",
+					"search_key": "module[s3_bucket]",
+					"search_line": 0,
+					"search_value": "",
+					"expected_value": "'logging' to be defined and not null",
+					"actual_value": "'logging' is undefined or null"
+				},
+				{
+					"file_name": "kics/assets/queries/terraform/aws/s3_bucket_without_enabled_mfa_delete/test/positive7.tf",
+					"similarity_id": "d2bf5e1dd22d7a1afc14c223ce40de23fab155ae5ceb0de0433b44addc0348b9",
+					"line": 1,
+					"resource_type": "n/a",
+					"resource_name": "n/a",
+					"issue_type": "MissingAttribute",
+					"search_key": "module[s3_bucket]",
+					"search_line": 0,
+					"search_value": "",
+					"expected_value": "'logging' to be defined and not null",
+					"actual_value": "'logging' is undefined or null"
+				},
+				{
+					"file_name": "kics/assets/queries/terraform/aws/s3_bucket_without_enabled_mfa_delete/test/positive6.tf",
+					"similarity_id": "63dabd1f789492c68a02a5122300f08ec21dc4b5072532a33e87e5298b55175c",
+					"line": 1,
+					"resource_type": "n/a",
+					"resource_name": "n/a",
+					"issue_type": "MissingAttribute",
+					"search_key": "module[s3_bucket]",
+					"search_line": 0,
+					"search_value": "",
+					"expected_value": "'logging' to be defined and not null",
+					"actual_value": "'logging' is undefined or null"
+				},
+				{
+					"file_name": "kics/assets/queries/terraform/aws/s3_bucket_without_enabled_mfa_delete/test/positive9.tf",
+					"similarity_id": "d52cefde89649bc79081ea0d8e839917fe3bdbc7cd55a774fe0e26a93f24e827",
+					"line": 14,
+					"resource_type": "aws_s3_bucket",
+					"resource_name": "my-tf-test-bucket",
+					"issue_type": "MissingAttribute",
+					"search_key": "aws_s3_bucket[b0]",
+					"search_line": 0,
+					"search_value": "",
+					"expected_value": "'logging' to be defined and not null",
+					"actual_value": "'logging' is undefined or null"
+				},
+				{
+					"file_name": "kics/assets/queries/terraform/aws/s3_bucket_without_enabled_mfa_delete/test/positive4.tf",
+					"similarity_id": "35832eb5811003fa054ce4eb0e273aec860e6a039386d37e5d2209a541c457a5",
+					"line": 14,
+					"resource_type": "aws_s3_bucket",
+					"resource_name": "my-tf-test-bucket",
+					"issue_type": "MissingAttribute",
+					"search_key": "aws_s3_bucket[positive3]",
+					"search_line": 0,
+					"search_value": "",
+					"expected_value": "'logging' to be defined and not null",
+					"actual_value": "'logging' is undefined or null"
 				}
 			]
 		},
@@ -1014,8 +1014,8 @@
 			"description_id": "28aa7150",
 			"files": [
 				{
-					"file_name": "kics/assets/queries/terraform/aws/s3_bucket_without_enabled_mfa_delete/test/negative3.tf",
-					"similarity_id": "b4f9f71f66ba0ce55ec3d940b3520f206b3c5e617335379f9a9215ab71b7f605",
+					"file_name": "kics/assets/queries/terraform/aws/s3_bucket_without_enabled_mfa_delete/test/positive5.tf",
+					"similarity_id": "abe5129fc510d8339a704e2b9e551e1829f4d669fffd46843a6bfe5cfe3325bd",
 					"line": 1,
 					"resource_type": "n/a",
 					"resource_name": "n/a",
@@ -1029,6 +1029,19 @@
 				{
 					"file_name": "kics/assets/queries/terraform/aws/s3_bucket_without_enabled_mfa_delete/test/positive7.tf",
 					"similarity_id": "67e6512a23537b414259409b518006ae9c6eb58cef3378af6b7ccbfb9e3cc07d",
+					"line": 1,
+					"resource_type": "n/a",
+					"resource_name": "n/a",
+					"issue_type": "MissingAttribute",
+					"search_key": "module[s3_bucket].ignore_public_acls",
+					"search_line": 0,
+					"search_value": "",
+					"expected_value": "'ignore_public_acls' is equal 'true'",
+					"actual_value": "'ignore_public_acls' is missing"
+				},
+				{
+					"file_name": "kics/assets/queries/terraform/aws/s3_bucket_without_enabled_mfa_delete/test/negative3.tf",
+					"similarity_id": "b4f9f71f66ba0ce55ec3d940b3520f206b3c5e617335379f9a9215ab71b7f605",
 					"line": 1,
 					"resource_type": "n/a",
 					"resource_name": "n/a",
@@ -1077,19 +1090,6 @@
 					"search_value": "",
 					"expected_value": "'ignore_public_acls' is equal 'true'",
 					"actual_value": "'ignore_public_acls' is missing"
-				},
-				{
-					"file_name": "kics/assets/queries/terraform/aws/s3_bucket_without_enabled_mfa_delete/test/positive5.tf",
-					"similarity_id": "abe5129fc510d8339a704e2b9e551e1829f4d669fffd46843a6bfe5cfe3325bd",
-					"line": 1,
-					"resource_type": "n/a",
-					"resource_name": "n/a",
-					"issue_type": "MissingAttribute",
-					"search_key": "module[s3_bucket].ignore_public_acls",
-					"search_line": 0,
-					"search_value": "",
-					"expected_value": "'ignore_public_acls' is equal 'true'",
-					"actual_value": "'ignore_public_acls' is missing"
 				}
 			]
 		}
@@ -1107,83 +1107,23 @@
 			"description_id": "0bdf2341",
 			"files": [
 				{
-					"file_name": "kics/assets/queries/terraform/aws/s3_bucket_without_enabled_mfa_delete/test/positive1.tf",
-					"similarity_id": "1916b7344689b94a1959fb1b40324704eead4ec1ef20657d110148845daf3b36",
-					"line": 14,
-					"issue_type": "BillOfMaterials",
-					"search_key": "aws_s3_bucket[positive1]",
-					"search_line": 0,
-					"search_value": "",
-					"expected_value": "",
-					"actual_value": "",
-					"value": "{\"acl\":\"private\",\"resource_accessibility\":\"unknown\",\"resource_category\":\"Storage\",\"resource_encryption\":\"unencrypted\",\"resource_name\":\"my-tf-test-bucket\",\"resource_type\":\"aws_s3_bucket\",\"resource_vendor\":\"AWS\"}"
-				},
-				{
-					"file_name": "kics/assets/queries/terraform/aws/s3_bucket_without_enabled_mfa_delete/test/negative1.tf",
-					"similarity_id": "e051f1b5ccf09d9f3b15d5a3b84873a6ebc0aaa360046139723b1adc88b3276b",
-					"line": 14,
-					"issue_type": "BillOfMaterials",
-					"search_key": "aws_s3_bucket[negative1]",
-					"search_line": 0,
-					"search_value": "",
-					"expected_value": "",
-					"actual_value": "",
-					"value": "{\"acl\":\"private\",\"resource_accessibility\":\"unknown\",\"resource_category\":\"Storage\",\"resource_encryption\":\"unencrypted\",\"resource_name\":\"my-tf-test-bucket\",\"resource_type\":\"aws_s3_bucket\",\"resource_vendor\":\"AWS\"}"
-				},
-				{
-					"file_name": "kics/assets/queries/terraform/aws/s3_bucket_without_enabled_mfa_delete/test/positive4.tf",
-					"similarity_id": "5b12f90d6bd943ac45fafba076af7f5051c0fabb56fc3491d7fb8e561133c8fd",
-					"line": 14,
-					"issue_type": "BillOfMaterials",
-					"search_key": "aws_s3_bucket[positive3]",
-					"search_line": 0,
-					"search_value": "",
-					"expected_value": "",
-					"actual_value": "",
-					"value": "{\"acl\":\"private\",\"resource_accessibility\":\"unknown\",\"resource_category\":\"Storage\",\"resource_encryption\":\"unencrypted\",\"resource_name\":\"my-tf-test-bucket\",\"resource_type\":\"aws_s3_bucket\",\"resource_vendor\":\"AWS\"}"
-				},
-				{
-					"file_name": "kics/assets/queries/terraform/aws/s3_bucket_without_enabled_mfa_delete/test/positive2.tf",
-					"similarity_id": "39535fcae36252817863d28db1872186393fe36513f3916f0e21c9264f2a0947",
-					"line": 14,
-					"issue_type": "BillOfMaterials",
-					"search_key": "aws_s3_bucket[positive2]",
-					"search_line": 0,
-					"search_value": "",
-					"expected_value": "",
-					"actual_value": "",
-					"value": "{\"acl\":\"private\",\"resource_accessibility\":\"unknown\",\"resource_category\":\"Storage\",\"resource_encryption\":\"unencrypted\",\"resource_name\":\"my-tf-test-bucket\",\"resource_type\":\"aws_s3_bucket\",\"resource_vendor\":\"AWS\"}"
-				},
-				{
-					"file_name": "kics/assets/queries/terraform/aws/s3_bucket_without_enabled_mfa_delete/test/positive3.tf",
-					"similarity_id": "068addbe56896c75c678c67bdca5353896979f323c5d5d640110e999fa4afc50",
-					"line": 14,
-					"issue_type": "BillOfMaterials",
-					"search_key": "aws_s3_bucket[positive3]",
-					"search_line": 0,
-					"search_value": "",
-					"expected_value": "",
-					"actual_value": "",
-					"value": "{\"acl\":\"private\",\"resource_accessibility\":\"unknown\",\"resource_category\":\"Storage\",\"resource_encryption\":\"unencrypted\",\"resource_name\":\"my-tf-test-bucket\",\"resource_type\":\"aws_s3_bucket\",\"resource_vendor\":\"AWS\"}"
-				},
-				{
-					"file_name": "kics/assets/queries/terraform/aws/s3_bucket_without_enabled_mfa_delete/test/negative5.tf",
-					"similarity_id": "9c5873c8084c1c05c0b03f4fbfdeb0528939e65056d1a4b073b26f5da5c29260",
-					"line": 14,
-					"issue_type": "BillOfMaterials",
-					"search_key": "aws_s3_bucket[bb]",
-					"search_line": 0,
-					"search_value": "",
-					"expected_value": "",
-					"actual_value": "",
-					"value": "{\"acl\":\"private\",\"resource_accessibility\":\"unknown\",\"resource_category\":\"Storage\",\"resource_encryption\":\"unencrypted\",\"resource_name\":\"my-tf-test-bucket\",\"resource_type\":\"aws_s3_bucket\",\"resource_vendor\":\"AWS\"}"
-				},
-				{
 					"file_name": "kics/assets/queries/terraform/aws/s3_bucket_without_enabled_mfa_delete/test/positive10.tf",
 					"similarity_id": "144792f3f5c2cf3ff8ad464f15761ab423a299617adbc6509d2fe2061bb8293c",
 					"line": 14,
 					"issue_type": "BillOfMaterials",
 					"search_key": "aws_s3_bucket[bbb]",
+					"search_line": 0,
+					"search_value": "",
+					"expected_value": "",
+					"actual_value": "",
+					"value": "{\"acl\":\"private\",\"resource_accessibility\":\"unknown\",\"resource_category\":\"Storage\",\"resource_encryption\":\"unencrypted\",\"resource_name\":\"my-tf-test-bucket\",\"resource_type\":\"aws_s3_bucket\",\"resource_vendor\":\"AWS\"}"
+				},
+				{
+					"file_name": "kics/assets/queries/terraform/aws/s3_bucket_without_enabled_mfa_delete/test/negative4.tf",
+					"similarity_id": "016517ad9513760e14adb61470de89b4eb85e9f4eb9b7179832a6928ed16ba3e",
+					"line": 14,
+					"issue_type": "BillOfMaterials",
+					"search_key": "aws_s3_bucket[negative4]",
 					"search_line": 0,
 					"search_value": "",
 					"expected_value": "",
@@ -1203,11 +1143,71 @@
 					"value": "{\"acl\":\"private\",\"resource_accessibility\":\"unknown\",\"resource_category\":\"Storage\",\"resource_encryption\":\"unencrypted\",\"resource_name\":\"my-tf-test-bucket\",\"resource_type\":\"aws_s3_bucket\",\"resource_vendor\":\"AWS\"}"
 				},
 				{
-					"file_name": "kics/assets/queries/terraform/aws/s3_bucket_without_enabled_mfa_delete/test/negative4.tf",
-					"similarity_id": "016517ad9513760e14adb61470de89b4eb85e9f4eb9b7179832a6928ed16ba3e",
+					"file_name": "kics/assets/queries/terraform/aws/s3_bucket_without_enabled_mfa_delete/test/negative5.tf",
+					"similarity_id": "9c5873c8084c1c05c0b03f4fbfdeb0528939e65056d1a4b073b26f5da5c29260",
 					"line": 14,
 					"issue_type": "BillOfMaterials",
-					"search_key": "aws_s3_bucket[negative4]",
+					"search_key": "aws_s3_bucket[bb]",
+					"search_line": 0,
+					"search_value": "",
+					"expected_value": "",
+					"actual_value": "",
+					"value": "{\"acl\":\"private\",\"resource_accessibility\":\"unknown\",\"resource_category\":\"Storage\",\"resource_encryption\":\"unencrypted\",\"resource_name\":\"my-tf-test-bucket\",\"resource_type\":\"aws_s3_bucket\",\"resource_vendor\":\"AWS\"}"
+				},
+				{
+					"file_name": "kics/assets/queries/terraform/aws/s3_bucket_without_enabled_mfa_delete/test/negative1.tf",
+					"similarity_id": "e051f1b5ccf09d9f3b15d5a3b84873a6ebc0aaa360046139723b1adc88b3276b",
+					"line": 14,
+					"issue_type": "BillOfMaterials",
+					"search_key": "aws_s3_bucket[negative1]",
+					"search_line": 0,
+					"search_value": "",
+					"expected_value": "",
+					"actual_value": "",
+					"value": "{\"acl\":\"private\",\"resource_accessibility\":\"unknown\",\"resource_category\":\"Storage\",\"resource_encryption\":\"unencrypted\",\"resource_name\":\"my-tf-test-bucket\",\"resource_type\":\"aws_s3_bucket\",\"resource_vendor\":\"AWS\"}"
+				},
+				{
+					"file_name": "kics/assets/queries/terraform/aws/s3_bucket_without_enabled_mfa_delete/test/positive3.tf",
+					"similarity_id": "068addbe56896c75c678c67bdca5353896979f323c5d5d640110e999fa4afc50",
+					"line": 14,
+					"issue_type": "BillOfMaterials",
+					"search_key": "aws_s3_bucket[positive3]",
+					"search_line": 0,
+					"search_value": "",
+					"expected_value": "",
+					"actual_value": "",
+					"value": "{\"acl\":\"private\",\"resource_accessibility\":\"unknown\",\"resource_category\":\"Storage\",\"resource_encryption\":\"unencrypted\",\"resource_name\":\"my-tf-test-bucket\",\"resource_type\":\"aws_s3_bucket\",\"resource_vendor\":\"AWS\"}"
+				},
+				{
+					"file_name": "kics/assets/queries/terraform/aws/s3_bucket_without_enabled_mfa_delete/test/positive1.tf",
+					"similarity_id": "1916b7344689b94a1959fb1b40324704eead4ec1ef20657d110148845daf3b36",
+					"line": 14,
+					"issue_type": "BillOfMaterials",
+					"search_key": "aws_s3_bucket[positive1]",
+					"search_line": 0,
+					"search_value": "",
+					"expected_value": "",
+					"actual_value": "",
+					"value": "{\"acl\":\"private\",\"resource_accessibility\":\"unknown\",\"resource_category\":\"Storage\",\"resource_encryption\":\"unencrypted\",\"resource_name\":\"my-tf-test-bucket\",\"resource_type\":\"aws_s3_bucket\",\"resource_vendor\":\"AWS\"}"
+				},
+				{
+					"file_name": "kics/assets/queries/terraform/aws/s3_bucket_without_enabled_mfa_delete/test/positive2.tf",
+					"similarity_id": "39535fcae36252817863d28db1872186393fe36513f3916f0e21c9264f2a0947",
+					"line": 14,
+					"issue_type": "BillOfMaterials",
+					"search_key": "aws_s3_bucket[positive2]",
+					"search_line": 0,
+					"search_value": "",
+					"expected_value": "",
+					"actual_value": "",
+					"value": "{\"acl\":\"private\",\"resource_accessibility\":\"unknown\",\"resource_category\":\"Storage\",\"resource_encryption\":\"unencrypted\",\"resource_name\":\"my-tf-test-bucket\",\"resource_type\":\"aws_s3_bucket\",\"resource_vendor\":\"AWS\"}"
+				},
+				{
+					"file_name": "kics/assets/queries/terraform/aws/s3_bucket_without_enabled_mfa_delete/test/positive4.tf",
+					"similarity_id": "5b12f90d6bd943ac45fafba076af7f5051c0fabb56fc3491d7fb8e561133c8fd",
+					"line": 14,
+					"issue_type": "BillOfMaterials",
+					"search_key": "aws_s3_bucket[positive3]",
 					"search_line": 0,
 					"search_value": "",
 					"expected_value": "",
